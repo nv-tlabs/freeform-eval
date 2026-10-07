@@ -1,0 +1,14 @@
+base_dir: datasets/NVSimReady/processed/22e96af186aa7a864d8ac34590c78543fa22ba4e60cbc9ff7c053dc5e3441d7d
+msh_file: datasets/NVSimReady/tet_npz/22e96af186aa7a864d8ac34590c78543fa22ba4e60cbc9ff7c053dc5e3441d7d/CapriceBackless_A.msh
+surface_mesh_file: datasets/NVSimReady/tet_npz/22e96af186aa7a864d8ac34590c78543fa22ba4e60cbc9ff7c053dc5e3441d7d/CapriceBackless_A.msh
+boundary_file: config/simready/22e96af186aa7a864d8ac34590c78543fa22ba4e60cbc9ff7c053dc5e3441d7d/pull_farthest_points_4_10percent.npz
+young_modulus: 100000.0
+poisson_ratio: 0.45
+density: 500.0
+n_frames: 100
+dt: 0.05
+gravity: 9.8
+n_newton: 50
+newton_tol: 1.0e-08
+ground: false
+materials: datasets/NVSimReady/tet_npz/22e96af186aa7a864d8ac34590c78543fa22ba4e60cbc9ff7c053dc5e3441d7d/CapriceBackless_A_materials.npz

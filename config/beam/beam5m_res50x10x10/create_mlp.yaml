@@ -1,0 +1,19 @@
+method: mlp
+surface_mesh: data/beam/beam5m_res50x10x10/beam5m_res50x10x10_surface.ply
+output_dir: datasets/Beam/output/beam5m_res50x10x10
+
+young_modulus: 5e6
+poisson_ratio: 0.45
+density: 1000.0
+
+# num_handles: new kaolin subtracts 1 internally, so 33 gives 32 learned + 1 constant
+num_handles: 33
+num_layers: 6
+num_sample_pts: 1000000
+sample_method: random_volume
+num_training_samples: 1000
+num_steps: 10000
+lr_start: 1e-3
+lr_end: 1e-3
+le_coeff: 1e-1
+lo_coeff: 1e6

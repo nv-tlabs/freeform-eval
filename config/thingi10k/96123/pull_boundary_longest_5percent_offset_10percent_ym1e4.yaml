@@ -1,0 +1,13 @@
+base_dir: datasets/Thingi10K/processed/96123
+msh_file: datasets/Thingi10K/processed/96123/96123.stl_0121.msh
+surface_mesh_file: datasets/Thingi10K/processed/96123/96123_surface.ply
+boundary_file: config/thingi10k/96123/pull_boundary_longest_5percent_offset_10percent.npz
+young_modulus: 10000.0
+poisson_ratio: 0.45
+density: 500.0
+n_frames: 100
+dt: 0.05
+gravity: 9.8
+n_newton: 50
+newton_tol: 1.0e-08
+ground: false

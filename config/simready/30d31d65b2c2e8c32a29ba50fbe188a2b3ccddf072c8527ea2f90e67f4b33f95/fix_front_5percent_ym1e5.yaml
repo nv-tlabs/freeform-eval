@@ -1,0 +1,14 @@
+base_dir: datasets/NVSimReady/processed/30d31d65b2c2e8c32a29ba50fbe188a2b3ccddf072c8527ea2f90e67f4b33f95
+msh_file: datasets/NVSimReady/tet_npz/30d31d65b2c2e8c32a29ba50fbe188a2b3ccddf072c8527ea2f90e67f4b33f95/Lemon_01.msh
+surface_mesh_file: datasets/NVSimReady/tet_npz/30d31d65b2c2e8c32a29ba50fbe188a2b3ccddf072c8527ea2f90e67f4b33f95/Lemon_01.msh
+boundary_file: config/simready/30d31d65b2c2e8c32a29ba50fbe188a2b3ccddf072c8527ea2f90e67f4b33f95/fix_front_5percent.npz
+young_modulus: 100000.0
+poisson_ratio: 0.45
+density: 500.0
+n_frames: 100
+dt: 0.05
+gravity: 9.8
+n_newton: 50
+newton_tol: 1.0e-08
+ground: false
+materials: datasets/NVSimReady/tet_npz/30d31d65b2c2e8c32a29ba50fbe188a2b3ccddf072c8527ea2f90e67f4b33f95/Lemon_01_materials.npz

@@ -1,0 +1,14 @@
+base_dir: datasets/NVSimReady/processed/014841555b1c1ce0590f43ebe4863e5415a526b5afba642e459f48744c4bd05a
+msh_file: datasets/NVSimReady/tet_npz/014841555b1c1ce0590f43ebe4863e5415a526b5afba642e459f48744c4bd05a/Plant_Succulent_02.msh
+surface_mesh_file: datasets/NVSimReady/tet_npz/014841555b1c1ce0590f43ebe4863e5415a526b5afba642e459f48744c4bd05a/Plant_Succulent_02.msh
+boundary_file: config/simready/014841555b1c1ce0590f43ebe4863e5415a526b5afba642e459f48744c4bd05a/fix_front_5percent.npz
+young_modulus: 100000.0
+poisson_ratio: 0.45
+density: 500.0
+n_frames: 100
+dt: 0.05
+gravity: 9.8
+n_newton: 50
+newton_tol: 1.0e-08
+ground: false
+materials: datasets/NVSimReady/tet_npz/014841555b1c1ce0590f43ebe4863e5415a526b5afba642e459f48744c4bd05a/Plant_Succulent_02_materials.npz

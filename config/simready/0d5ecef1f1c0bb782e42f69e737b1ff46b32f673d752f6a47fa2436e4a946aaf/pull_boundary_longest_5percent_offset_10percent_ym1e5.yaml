@@ -1,0 +1,14 @@
+base_dir: datasets/NVSimReady/processed/0d5ecef1f1c0bb782e42f69e737b1ff46b32f673d752f6a47fa2436e4a946aaf
+msh_file: datasets/NVSimReady/tet_npz/0d5ecef1f1c0bb782e42f69e737b1ff46b32f673d752f6a47fa2436e4a946aaf/Billiard_Rack.msh
+surface_mesh_file: datasets/NVSimReady/tet_npz/0d5ecef1f1c0bb782e42f69e737b1ff46b32f673d752f6a47fa2436e4a946aaf/Billiard_Rack.msh
+boundary_file: config/simready/0d5ecef1f1c0bb782e42f69e737b1ff46b32f673d752f6a47fa2436e4a946aaf/pull_boundary_longest_5percent_offset_10percent.npz
+young_modulus: 100000.0
+poisson_ratio: 0.45
+density: 500.0
+n_frames: 100
+dt: 0.05
+gravity: 9.8
+n_newton: 50
+newton_tol: 1.0e-08
+ground: false
+materials: datasets/NVSimReady/tet_npz/0d5ecef1f1c0bb782e42f69e737b1ff46b32f673d752f6a47fa2436e4a946aaf/Billiard_Rack_materials.npz

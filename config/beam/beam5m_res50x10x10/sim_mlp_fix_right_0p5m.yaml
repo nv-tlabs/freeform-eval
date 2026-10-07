@@ -1,0 +1,11 @@
+model: datasets/Beam/output/beam5m_res50x10x10/mlp_model.pth
+boundary_config: config/beam/beam5m_res50x10x10/fix_right_0p5m_ym5e6.yaml
+output_dir: datasets/Beam/output/beam5m_res50x10x10
+
+separate_bdry_weight: 1e5
+num_samples: 125000
+apply_qr: true
+dt: 0.01
+max_newton_steps: 20
+truncate_qr_rank: true
+num_steps: 300

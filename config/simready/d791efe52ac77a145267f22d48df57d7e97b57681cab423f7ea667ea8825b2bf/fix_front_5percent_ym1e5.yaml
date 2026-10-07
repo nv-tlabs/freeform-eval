@@ -1,0 +1,14 @@
+base_dir: datasets/NVSimReady/processed/d791efe52ac77a145267f22d48df57d7e97b57681cab423f7ea667ea8825b2bf
+msh_file: datasets/NVSimReady/tet_npz/d791efe52ac77a145267f22d48df57d7e97b57681cab423f7ea667ea8825b2bf/orange_02_inst_base.msh
+surface_mesh_file: datasets/NVSimReady/tet_npz/d791efe52ac77a145267f22d48df57d7e97b57681cab423f7ea667ea8825b2bf/orange_02_inst_base.msh
+boundary_file: config/simready/d791efe52ac77a145267f22d48df57d7e97b57681cab423f7ea667ea8825b2bf/fix_front_5percent.npz
+young_modulus: 100000.0
+poisson_ratio: 0.45
+density: 500.0
+n_frames: 100
+dt: 0.05
+gravity: 9.8
+n_newton: 50
+newton_tol: 1.0e-08
+ground: false
+materials: datasets/NVSimReady/tet_npz/d791efe52ac77a145267f22d48df57d7e97b57681cab423f7ea667ea8825b2bf/orange_02_inst_base_materials.npz

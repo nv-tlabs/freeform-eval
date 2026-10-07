@@ -1,0 +1,5 @@
+config/simready/**/*.npz filter=lfs diff=lfs merge=lfs -text
+config/beam/**/*.npz filter=lfs diff=lfs merge=lfs -text
+*.msh filter=lfs diff=lfs merge=lfs -text
+*.ply filter=lfs diff=lfs merge=lfs -text
+data/simready_tet_npz.tar.gz filter=lfs diff=lfs merge=lfs -text

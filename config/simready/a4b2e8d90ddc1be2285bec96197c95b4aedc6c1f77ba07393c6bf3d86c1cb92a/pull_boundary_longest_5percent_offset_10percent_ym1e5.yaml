@@ -1,0 +1,14 @@
+base_dir: datasets/NVSimReady/processed/a4b2e8d90ddc1be2285bec96197c95b4aedc6c1f77ba07393c6bf3d86c1cb92a
+msh_file: datasets/NVSimReady/tet_npz/a4b2e8d90ddc1be2285bec96197c95b4aedc6c1f77ba07393c6bf3d86c1cb92a/dellwood_ottoman_inst_base.msh
+surface_mesh_file: datasets/NVSimReady/tet_npz/a4b2e8d90ddc1be2285bec96197c95b4aedc6c1f77ba07393c6bf3d86c1cb92a/dellwood_ottoman_inst_base.msh
+boundary_file: config/simready/a4b2e8d90ddc1be2285bec96197c95b4aedc6c1f77ba07393c6bf3d86c1cb92a/pull_boundary_longest_5percent_offset_10percent.npz
+young_modulus: 100000.0
+poisson_ratio: 0.45
+density: 500.0
+n_frames: 100
+dt: 0.05
+gravity: 9.8
+n_newton: 50
+newton_tol: 1.0e-08
+ground: false
+materials: datasets/NVSimReady/tet_npz/a4b2e8d90ddc1be2285bec96197c95b4aedc6c1f77ba07393c6bf3d86c1cb92a/dellwood_ottoman_inst_base_materials.npz

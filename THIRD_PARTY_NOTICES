@@ -1,0 +1,83 @@
+Third-Party Software Notices
+
+This project includes the following third-party software:
+
+================================================================================
+VoMP (Volumetric Material Property Prediction)
+================================================================================
+
+Location: third_party/VoMP/
+Source:   https://github.com/nv-tlabs/VoMP
+License:  Apache License 2.0 (source code)
+
+Used for: FEM ground truth simulation via its warp.fem solver
+(fem_examples/mfem/). Our fem/ directory extends VoMP's solver with
+Neo-Hookean energy and spatially varying material support.
+
+Note: VoMP's source code is Apache-2.0, but VoMP's trained models are
+released under the NVIDIA Open Model License. No VoMP model weights are
+distributed with this repository. The material properties in
+data/simready_tet_npz.tar.gz were predicted using a VoMP model and are
+therefore model outputs; see the NVIDIA Open Model License for the terms
+governing the producing model.
+
+Copyright (c) 2025 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+The full Apache 2.0 license text is preserved at third_party/VoMP/LICENSE.
+
+The following files in this repository are derived from VoMP. They are under
+the Apache License 2.0 and their headers preserve VoMP's copyright notice and
+describe the modifications made here:
+
+  fem/mfem/softbody_sim.py  — modified from VoMP's fem_examples/mfem/softbody_sim.py
+  fem/material_loader.py    — modified from VoMP's simulation/warp.fem/material_loader.py
+  fem/fem_sim_gt.py         — modified from VoMP's simulation/warp.fem/drop_tetmesh.py
+
+================================================================================
+Kaolin (NVIDIA Kaolin)
+================================================================================
+
+Source:   https://github.com/NVIDIAGameWorks/kaolin
+License:  Apache License 2.0
+
+Used for: Reduced-order simulation via the Simplicits API.
+
+The following files in this repository are derived from Kaolin. They are under
+the Apache License 2.0 and their headers preserve Kaolin's copyright notice and
+describe the modifications made here:
+
+  sim/simplicits_ext.py    — FreeformSimulatedObject and FreeformScene subclass
+                             and adapt Kaolin's SimulatedObject and
+                             SimplicitsScene from physics/simplicits/simulation.py;
+                             _freeform_newtons_method is adapted from
+                             newtons_method in physics/common/optimization.py
+
+  fem/mfem/softbody_sim.py — additionally contains _wp_bsr_to_torch_bsr, derived
+                             from Kaolin's physics/utils/warp_utilities.py
+                             (this file is also VoMP-derived; see above)
+
+Copyright (c) 2026 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.

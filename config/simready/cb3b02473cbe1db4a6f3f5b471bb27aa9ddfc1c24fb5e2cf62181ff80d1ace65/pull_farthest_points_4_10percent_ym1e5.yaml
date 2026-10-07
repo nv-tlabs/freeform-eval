@@ -1,0 +1,14 @@
+base_dir: datasets/NVSimReady/processed/cb3b02473cbe1db4a6f3f5b471bb27aa9ddfc1c24fb5e2cf62181ff80d1ace65
+msh_file: datasets/NVSimReady/tet_npz/cb3b02473cbe1db4a6f3f5b471bb27aa9ddfc1c24fb5e2cf62181ff80d1ace65/fork_small_inst_base.msh
+surface_mesh_file: datasets/NVSimReady/tet_npz/cb3b02473cbe1db4a6f3f5b471bb27aa9ddfc1c24fb5e2cf62181ff80d1ace65/fork_small_inst_base.msh
+boundary_file: config/simready/cb3b02473cbe1db4a6f3f5b471bb27aa9ddfc1c24fb5e2cf62181ff80d1ace65/pull_farthest_points_4_10percent.npz
+young_modulus: 100000.0
+poisson_ratio: 0.45
+density: 500.0
+n_frames: 100
+dt: 0.05
+gravity: 9.8
+n_newton: 50
+newton_tol: 1.0e-08
+ground: false
+materials: datasets/NVSimReady/tet_npz/cb3b02473cbe1db4a6f3f5b471bb27aa9ddfc1c24fb5e2cf62181ff80d1ace65/fork_small_inst_base_materials.npz

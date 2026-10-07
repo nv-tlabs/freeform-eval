@@ -1,0 +1,10 @@
+[project]
+name = "freeform-release"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+# Upper bound: PyTorch cu124 wheels are only published for cp310/cp311.
+# Without it, `uv sync` selects the newest interpreter available and the
+# torch install in README step 1 fails to resolve.
+requires-python = ">=3.10,<3.12"
+dependencies = []

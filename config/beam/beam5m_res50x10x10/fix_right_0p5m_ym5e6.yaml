@@ -1,0 +1,13 @@
+base_dir: datasets/Beam/processed/beam5m_res50x10x10
+msh_file: data/beam/beam5m_res50x10x10/beam5m_res50x10x10.msh
+surface_mesh_file: data/beam/beam5m_res50x10x10/beam5m_res50x10x10_surface.ply
+boundary_file: config/beam/beam5m_res50x10x10/fix_right_0p5m.npz
+young_modulus: 5000000.0
+poisson_ratio: 0.45
+density: 1000.0
+n_frames: 300
+dt: 0.01
+gravity: 9.8
+n_newton: 20
+newton_tol: 1.0e-08
+ground: false

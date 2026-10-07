@@ -1,0 +1,14 @@
+base_dir: datasets/NVSimReady/processed/cb87dff20863d1de4e331c05b0b2fada792e6e37ad342ad4bdb3fa4c22255800
+msh_file: datasets/NVSimReady/tet_npz/cb87dff20863d1de4e331c05b0b2fada792e6e37ad342ad4bdb3fa4c22255800/DecorativeWoodenBowl.msh
+surface_mesh_file: datasets/NVSimReady/tet_npz/cb87dff20863d1de4e331c05b0b2fada792e6e37ad342ad4bdb3fa4c22255800/DecorativeWoodenBowl.msh
+boundary_file: config/simready/cb87dff20863d1de4e331c05b0b2fada792e6e37ad342ad4bdb3fa4c22255800/fix_front_5percent.npz
+young_modulus: 100000.0
+poisson_ratio: 0.45
+density: 500.0
+n_frames: 100
+dt: 0.05
+gravity: 9.8
+n_newton: 50
+newton_tol: 1.0e-08
+ground: false
+materials: datasets/NVSimReady/tet_npz/cb87dff20863d1de4e331c05b0b2fada792e6e37ad342ad4bdb3fa4c22255800/DecorativeWoodenBowl_materials.npz
